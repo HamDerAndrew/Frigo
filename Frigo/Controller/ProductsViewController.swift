@@ -22,9 +22,6 @@ class ProductsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Hide back button when u come from the receipt page
-        navigationItem.hidesBackButton = true
-        
         //Set the data source for the TableView. It will be ProductsViewController (the 'self').
         tableView.dataSource = self
         
@@ -87,6 +84,9 @@ class ProductsViewController: UIViewController {
     }
     
     
+    @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     
 }
 

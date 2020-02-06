@@ -23,11 +23,11 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="ProductsViewController" customModule="Frigo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rSA-Hn-bN5">
-                                <rect key="frame" x="20" y="0.0" width="374" height="808"/>
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.94901960780000005" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -41,7 +41,13 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Produkter" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" id="LyV-UH-qFd"/>
+                    <navigationItem key="navigationItem" id="LyV-UH-qFd">
+                        <barButtonItem key="rightBarButtonItem" title="Log ud" width="30" id="720-CX-aFJ">
+                            <connections>
+                                <action selector="logoutPressed:" destination="9pv-A4-QxB" id="agx-QD-rhl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="rSA-Hn-bN5" id="L6c-C5-61d"/>
                         <segue destination="ssx-HY-1Ly" kind="show" identifier="productDetail" id="bas-Ls-SEE"/>
@@ -56,14 +62,14 @@
             <objects>
                 <viewController id="ssx-HY-1Ly" customClass="ProductViewController" customModule="Frigo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DAE-iw-cCD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hGG-0B-plU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQb-kM-qO4" userLabel="Product Container">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="378"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="362"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-bull" translatesAutoresizingMaskIntoConstraints="NO" id="9wj-rf-n6L">
                                                 <rect key="frame" x="0.0" y="23.666666666666686" width="246" height="292"/>
@@ -79,10 +85,10 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jP-jS-7MX" userLabel="AmountPrice Cointainer">
-                                        <rect key="frame" x="0.0" y="383" width="414" height="142.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="367" width="414" height="136.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x8-Xk-BXU">
-                                                <rect key="frame" x="174.66666666666666" y="36.333333333333314" width="65" height="70"/>
+                                                <rect key="frame" x="174.66666666666666" y="33.333333333333314" width="65" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="65" id="swO-C2-yHU"/>
@@ -93,7 +99,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 kr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3V-m3-Hv9">
-                                                <rect key="frame" x="174.66666666666666" y="116.33333333333331" width="65" height="18"/>
+                                                <rect key="frame" x="174.66666666666666" y="113.33333333333337" width="65" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="65" id="4IR-Gz-HLt"/>
                                                 </constraints>
@@ -102,7 +108,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaV-ku-rGT" userLabel="Decrease">
-                                                <rect key="frame" x="84.666666666666671" y="45.666666666666686" width="51.000000000000014" height="51"/>
+                                                <rect key="frame" x="84.666666666666671" y="42.666666666666686" width="51.000000000000014" height="51"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="51" id="w66-Ju-qLg"/>
                                                 </constraints>
@@ -112,7 +118,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-P3-FXQ" userLabel="Increase">
-                                                <rect key="frame" x="278.66666666666669" y="45.666666666666686" width="65" height="51"/>
+                                                <rect key="frame" x="278.66666666666669" y="42.666666666666686" width="65" height="51"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="65" id="qOv-0H-Pwn"/>
                                                 </constraints>
@@ -134,10 +140,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-9R-dCk" userLabel="Button Container">
-                                        <rect key="frame" x="0.0" y="530.33333333333337" width="414" height="277.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="508.33333333333337" width="414" height="265.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbf-gy-ZMc">
-                                                <rect key="frame" x="20" y="197.66666666666663" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="185.66666666666663" width="374" height="60"/>
                                                 <color key="backgroundColor" red="0.0" green="0.1137254902" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="3yi-Zd-ChR"/>
@@ -189,14 +195,14 @@
             <objects>
                 <viewController id="rvX-9Z-J1w" customClass="ProcessingViewController" customModule="Frigo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yPH-3l-nTT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="process2" translatesAutoresizingMaskIntoConstraints="NO" id="u1W-65-SpL">
-                                <rect key="frame" x="163.66666666666666" y="285" width="87" height="92"/>
+                                <rect key="frame" x="163.66666666666666" y="312" width="87" height="92"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gZ-L7-r8y">
-                                <rect key="frame" x="5" y="397" width="404" height="48"/>
+                                <rect key="frame" x="5" y="424" width="404" height="48"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -228,11 +234,11 @@
             <objects>
                 <viewController id="uWU-Eh-ZbQ" customClass="ReceiptViewController" customModule="Frigo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QV9-Jw-Tik">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receipt" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-o4-Y39">
-                                <rect key="frame" x="37" y="181" width="340" height="480"/>
+                                <rect key="frame" x="37" y="208" width="340" height="480"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5d7-Hc-xRw" userLabel="Header Container">
                                 <rect key="frame" x="60" y="214" width="294" height="110"/>
@@ -522,7 +528,6 @@
         <image name="red-bull" width="246" height="292"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z31-MK-YGU"/>
-        <segue reference="Wgg-iW-a7r"/>
+        <segue reference="u7Y-xg-7CH"/>
     </inferredMetricsTieBreakers>
 </document>
