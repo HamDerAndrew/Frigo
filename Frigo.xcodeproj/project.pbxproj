@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A05C421F23E04F6C00511BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C421E23E04F6C00511BEA /* AppDelegate.swift */; };
+		A05C422123E04F6C00511BEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C422023E04F6C00511BEA /* SceneDelegate.swift */; };
+		A05C422323E04F6C00511BEA /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C422223E04F6C00511BEA /* ProductsViewController.swift */; };
+		A05C422523E04F6C00511BEA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C422423E04F6C00511BEA /* HistoryViewController.swift */; };
+		A05C422A23E04F7100511BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05C422923E04F7100511BEA /* Assets.xcassets */; };
+		A05C422D23E04F7100511BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05C422B23E04F7100511BEA /* LaunchScreen.storyboard */; };
+		A070F97123E05B3F00A68626 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070F97023E05B3F00A68626 /* LoginViewController.swift */; };
+		A070F97A23E0619100A68626 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A070F97423E0616400A68626 /* Nunito-BoldItalic.ttf */; };
+		A070F97B23E0619400A68626 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A070F97923E0616E00A68626 /* Nunito-Italic.ttf */; };
+		A070F97C23E0619700A68626 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A070F97823E0616E00A68626 /* Nunito-Light.ttf */; };
+		A070F97D23E0619A00A68626 /* nunitobold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A070F97723E0616E00A68626 /* nunitobold.ttf */; };
+		A070F97E23E0619F00A68626 /* nunitoregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A070F97523E0616E00A68626 /* nunitoregular.ttf */; };
+		A070F97F23E0619F00A68626 /* nunitosemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A070F97623E0616E00A68626 /* nunitosemibold.ttf */; };
+		A07221E723E6F4F600CCC4BD /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07221E623E6F4F600CCC4BD /* ProductCell.swift */; };
+		A07221EE23E8F48E00CCC4BD /* CustomProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07221EC23E8F48E00CCC4BD /* CustomProductCell.swift */; };
+		A07221EF23E8F48E00CCC4BD /* CustomProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07221ED23E8F48E00CCC4BD /* CustomProductCell.xib */; };
+		A07221F123EB12CE00CCC4BD /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07221F023EB12CD00CCC4BD /* ReceiptViewController.swift */; };
+		A0804A8923E5FDAD00159FDE /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0804A8823E5FDAD00159FDE /* ProductViewController.swift */; };
+		A0804A8B23E601D100159FDE /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0804A8A23E601D100159FDE /* ProcessingViewController.swift */; };
+		A09F91AB23E3842600B863DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09F91AA23E3842600B863DE /* Main.storyboard */; };
+		A09F91AD23E388C300B863DE /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09F91AC23E388C200B863DE /* ProductManager.swift */; };
+		A0B3CA6623E0F8C7007C6843 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3CA6523E0F8C6007C6843 /* ProductsTableViewCell.swift */; };
+		A0B3CA6823E1113C007C6843 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3CA6723E1113C007C6843 /* ProductModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A05C421B23E04F6C00511BEA /* Frigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05C421E23E04F6C00511BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A05C422023E04F6C00511BEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A05C422223E04F6C00511BEA /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		A05C422423E04F6C00511BEA /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A05C422923E04F7100511BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A05C422C23E04F7100511BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A05C422E23E04F7100511BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A070F97023E05B3F00A68626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A070F97423E0616400A68626 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-BoldItalic.ttf"; path = "../../../../App Development/salesapp-react/assets/fonts/Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A070F97523E0616E00A68626 /* nunitoregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = nunitoregular.ttf; path = "../../../../App Development/salesapp-react/assets/fonts/nunitoregular.ttf"; sourceTree = "<group>"; };
+		A070F97623E0616E00A68626 /* nunitosemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = nunitosemibold.ttf; path = "../../../../App Development/salesapp-react/assets/fonts/nunitosemibold.ttf"; sourceTree = "<group>"; };
+		A070F97723E0616E00A68626 /* nunitobold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = nunitobold.ttf; path = "../../../../App Development/salesapp-react/assets/fonts/nunitobold.ttf"; sourceTree = "<group>"; };
+		A070F97823E0616E00A68626 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Light.ttf"; path = "../../../../App Development/salesapp-react/assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; };
+		A070F97923E0616E00A68626 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Italic.ttf"; path = "../../../../App Development/salesapp-react/assets/fonts/Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		A07221E623E6F4F600CCC4BD /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		A07221EC23E8F48E00CCC4BD /* CustomProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProductCell.swift; sourceTree = "<group>"; };
+		A07221ED23E8F48E00CCC4BD /* CustomProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomProductCell.xib; sourceTree = "<group>"; };
+		A07221F023EB12CD00CCC4BD /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		A0804A8823E5FDAD00159FDE /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		A0804A8A23E601D100159FDE /* ProcessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingViewController.swift; sourceTree = "<group>"; };
+		A09F91AA23E3842600B863DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A09F91AC23E388C200B863DE /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		A0B3CA6523E0F8C6007C6843 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		A0B3CA6723E1113C007C6843 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A05C421823E04F6C00511BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A05C421223E04F6C00511BEA = {
+			isa = PBXGroup;
+			children = (
+				A05C421D23E04F6C00511BEA /* Frigo */,
+				A05C421C23E04F6C00511BEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A05C421C23E04F6C00511BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A05C421B23E04F6C00511BEA /* Frigo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A05C421D23E04F6C00511BEA /* Frigo */ = {
+			isa = PBXGroup;
+			children = (
+				A05C421E23E04F6C00511BEA /* AppDelegate.swift */,
+				A05C422023E04F6C00511BEA /* SceneDelegate.swift */,
+				A0B3CA6923E1114B007C6843 /* Model */,
+				A070F97223E05B6A00A68626 /* Controller */,
+				A09F91A523E37CA400B863DE /* Views */,
+				A05C422923E04F7100511BEA /* Assets.xcassets */,
+				A070F97323E060D300A68626 /* Fonts */,
+				A05C422B23E04F7100511BEA /* LaunchScreen.storyboard */,
+				A05C422E23E04F7100511BEA /* Info.plist */,
+			);
+			path = Frigo;
+			sourceTree = "<group>";
+		};
+		A070F97223E05B6A00A68626 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A05C422223E04F6C00511BEA /* ProductsViewController.swift */,
+				A05C422423E04F6C00511BEA /* HistoryViewController.swift */,
+				A070F97023E05B3F00A68626 /* LoginViewController.swift */,
+				A0804A8823E5FDAD00159FDE /* ProductViewController.swift */,
+				A0804A8A23E601D100159FDE /* ProcessingViewController.swift */,
+				A07221F023EB12CD00CCC4BD /* ReceiptViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A070F97323E060D300A68626 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A070F97423E0616400A68626 /* Nunito-BoldItalic.ttf */,
+				A070F97923E0616E00A68626 /* Nunito-Italic.ttf */,
+				A070F97823E0616E00A68626 /* Nunito-Light.ttf */,
+				A070F97723E0616E00A68626 /* nunitobold.ttf */,
+				A070F97523E0616E00A68626 /* nunitoregular.ttf */,
+				A070F97623E0616E00A68626 /* nunitosemibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A09F91A523E37CA400B863DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A09F91AA23E3842600B863DE /* Main.storyboard */,
+				A07221EC23E8F48E00CCC4BD /* CustomProductCell.swift */,
+				A07221ED23E8F48E00CCC4BD /* CustomProductCell.xib */,
+				A0B3CA6523E0F8C6007C6843 /* ProductsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0B3CA6923E1114B007C6843 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A09F91AC23E388C200B863DE /* ProductManager.swift */,
+				A0B3CA6723E1113C007C6843 /* ProductModel.swift */,
+				A07221E623E6F4F600CCC4BD /* ProductCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A05C421A23E04F6C00511BEA /* Frigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05C423123E04F7100511BEA /* Build configuration list for PBXNativeTarget "Frigo" */;
+			buildPhases = (
+				A05C421723E04F6C00511BEA /* Sources */,
+				A05C421823E04F6C00511BEA /* Frameworks */,
+				A05C421923E04F6C00511BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Frigo;
+			productName = Frigo;
+			productReference = A05C421B23E04F6C00511BEA /* Frigo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A05C421323E04F6C00511BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "André Larsen";
+				TargetAttributes = {
+					A05C421A23E04F6C00511BEA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A05C421623E04F6C00511BEA /* Build configuration list for PBXProject "Frigo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A05C421223E04F6C00511BEA;
+			productRefGroup = A05C421C23E04F6C00511BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A05C421A23E04F6C00511BEA /* Frigo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A05C421923E04F6C00511BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05C422D23E04F7100511BEA /* LaunchScreen.storyboard in Resources */,
+				A070F97B23E0619400A68626 /* Nunito-Italic.ttf in Resources */,
+				A07221EF23E8F48E00CCC4BD /* CustomProductCell.xib in Resources */,
+				A070F97C23E0619700A68626 /* Nunito-Light.ttf in Resources */,
+				A05C422A23E04F7100511BEA /* Assets.xcassets in Resources */,
+				A070F97E23E0619F00A68626 /* nunitoregular.ttf in Resources */,
+				A070F97A23E0619100A68626 /* Nunito-BoldItalic.ttf in Resources */,
+				A09F91AB23E3842600B863DE /* Main.storyboard in Resources */,
+				A070F97F23E0619F00A68626 /* nunitosemibold.ttf in Resources */,
+				A070F97D23E0619A00A68626 /* nunitobold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A05C421723E04F6C00511BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05C422523E04F6C00511BEA /* HistoryViewController.swift in Sources */,
+				A07221F123EB12CE00CCC4BD /* ReceiptViewController.swift in Sources */,
+				A07221E723E6F4F600CCC4BD /* ProductCell.swift in Sources */,
+				A05C422323E04F6C00511BEA /* ProductsViewController.swift in Sources */,
+				A05C421F23E04F6C00511BEA /* AppDelegate.swift in Sources */,
+				A0804A8B23E601D100159FDE /* ProcessingViewController.swift in Sources */,
+				A09F91AD23E388C300B863DE /* ProductManager.swift in Sources */,
+				A07221EE23E8F48E00CCC4BD /* CustomProductCell.swift in Sources */,
+				A0B3CA6623E0F8C7007C6843 /* ProductsTableViewCell.swift in Sources */,
+				A070F97123E05B3F00A68626 /* LoginViewController.swift in Sources */,
+				A0804A8923E5FDAD00159FDE /* ProductViewController.swift in Sources */,
+				A0B3CA6823E1113C007C6843 /* ProductModel.swift in Sources */,
+				A05C422123E04F6C00511BEA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A05C422B23E04F7100511BEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A05C422C23E04F7100511BEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A05C422F23E04F7100511BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A05C423023E04F7100511BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A05C423223E04F7100511BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Frigo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarsen.Frigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A05C423323E04F7100511BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Frigo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alarsen.Frigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A05C421623E04F6C00511BEA /* Build configuration list for PBXProject "Frigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05C422F23E04F7100511BEA /* Debug */,
+				A05C423023E04F7100511BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A05C423123E04F7100511BEA /* Build configuration list for PBXNativeTarget "Frigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05C423223E04F7100511BEA /* Debug */,
+				A05C423323E04F7100511BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A05C421323E04F6C00511BEA /* Project object */;
+}
