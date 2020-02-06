@@ -28,7 +28,7 @@ class ReceiptViewController: UIViewController {
         }
         
         purchasedProduct.text = "\(paidAmount ?? 0) x \(paidProduct ?? "Intent produkt")"
-        purchasedProductPrice.text = "\(paidPrice ?? 0) kr."
+        purchasedProductPrice.text = "\(total ?? 0) kr."
         purchasedSum.text = "\(total ?? 0) kr."
         
         getDate()
