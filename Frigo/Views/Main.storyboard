@@ -41,13 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Produkter" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" id="LyV-UH-qFd">
-                        <barButtonItem key="rightBarButtonItem" title="Log ud" width="30" id="720-CX-aFJ">
-                            <connections>
-                                <action selector="logoutPressed:" destination="9pv-A4-QxB" id="agx-QD-rhl"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="LyV-UH-qFd"/>
                     <connections>
                         <outlet property="tableView" destination="rSA-Hn-bN5" id="L6c-C5-61d"/>
                         <segue destination="ssx-HY-1Ly" kind="show" identifier="productDetail" id="bas-Ls-SEE"/>
@@ -448,7 +442,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="49e-Tb-3d3" kind="show" id="Lhr-to-IpW"/>
+                                                    <action selector="loginPressed:" destination="1wy-wt-MFy" eventType="touchUpInside" id="o2U-nu-VQZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -474,17 +468,20 @@
                         <outlet property="emailTextField" destination="VsB-fm-pd7" id="k9n-Wv-rWi"/>
                         <outlet property="loginBtn" destination="euh-oN-rb6" id="MxA-9t-wWA"/>
                         <outlet property="passwordTextField" destination="kXN-Rf-zqf" id="jNX-5P-ggD"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="toProducts" id="ZpJ-Kb-elp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxF-ZU-zEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265.217391304348" y="48.883928571428569"/>
+            <point key="canvasLocation" x="1541" y="49"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="DoO-XL-3L6"/>
+                    <navigationItem key="navigationItem" id="DoO-XL-3L6">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="3iO-4p-JcC"/>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -507,6 +504,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xLd-ks-7tn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.93333333333333335" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

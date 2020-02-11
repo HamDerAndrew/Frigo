@@ -38,8 +38,11 @@ class ProductsViewController: UIViewController {
     //Hide back button on tabnavigation
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let logOutBtn = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(logoutPressed))
+        self.tabBarController?.navigationItem.rightBarButtonItem = logOutBtn
         self.tabBarController?.navigationItem.hidesBackButton = true
         self.tabBarController?.navigationItem.title = "Produkter"
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func getProducts() -> [ProductCell] {
@@ -89,6 +92,7 @@ class ProductsViewController: UIViewController {
     }
     
 }
+
 
 //Needed to populate the TableView with data. It is responsible for that.
 extension ProductsViewController: UITableViewDataSource {

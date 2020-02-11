@@ -48,11 +48,11 @@ class ReceiptViewController: UIViewController {
     }
     
     @IBAction func closePressed(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+        //navigationController?.popToRootViewController(animated: true)
         
         /*A hacky solution for navigating to the ProductsViewController, but the top par dissappears when doing it this way*/
-        //let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
-        //self.navigationController!.popToViewController(viewControllers[viewControllers.count - 4], animated: true)
+        let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
+        self.navigationController!.popToViewController(viewControllers[viewControllers.count - 4], animated: true)
     }
     
     func getDate() {

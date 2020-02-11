@@ -54,12 +54,6 @@ class ProcessingViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    //Show the top navigation bar again when the view is destroyed.
-    //This is so the top nav bar is still shown on the other views.
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ReceiptViewController {
