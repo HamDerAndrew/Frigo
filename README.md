@@ -5,5 +5,5 @@ Personal / eductational projet.
 email: "hoc@hoc.io"
 pass: "123"
 
-Clone/download and run it on an iPhone 10 or above.
+Clone/download and run it on an iPhone 10 or above for the best experience.
 
