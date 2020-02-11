@@ -15,6 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let textColor: UIColor = UIColor(displayP3Red: 0.0/255, green: 29.0/255, blue: 209.0/255, alpha: 1.0)
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "Nunito-Bold", size: 25)!,
+            NSAttributedString.Key.foregroundColor: textColor
+        ]
+
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Nunito-Bold", size: 25)!, NSAttributedString.Key.foregroundColor : textColor], for: UIControl.State.normal)
+        
+        
         return true
     }
 

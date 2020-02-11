@@ -46,7 +46,6 @@ class ProductViewController: UIViewController {
         productAmount.layer.borderWidth = 2
         productAmount.layer.borderColor = UIColor(red: 156.0/255.0, green: 160.0/255.0, blue: 195.0/255.0, alpha: 1.0).cgColor
         
-        
     }
     
     @IBAction func increaseAmount(_ sender: UIButton) {

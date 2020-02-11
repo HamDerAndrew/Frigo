@@ -36,20 +36,19 @@ class LoginViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
-    
     @IBAction func loginPressed(_ sender: Any) {
-        if(emailTextField.text == "hoc@hoc.io" && passwordTextField.text == "123") {
+        if (emailTextField.text == "hoc@hoc.io" && passwordTextField.text == "123") {
             performSegue(withIdentifier: "toProducts", sender: self)
-        } else if(emailTextField.text != "hoc@hoc.io" && passwordTextField.text != "123") {
+        } else if (emailTextField.text != "hoc@hoc.io" && passwordTextField.text != "123") {
             let alert = UIAlertController(title: "Login fejl", message: "Forkert brugernavn og/eller password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
             
             present(alert, animated: true)
         }
+        emailTextField.text = ""
+        passwordTextField.text = ""
     }
+    
 
 }
 
