@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
         emailTextField.delegate = self
         
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Nunito", size: 20)!], for: .normal)
-        loginBtn.layer.cornerRadius = 8.0
+        loginBtn.layer.cornerRadius = 10.0
         
     }
     
