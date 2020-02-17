@@ -50,7 +50,6 @@ struct Fields: Codable {
     let list_image: String
 }
 
-//lvl 5
 struct BigImage: Codable {
     let file_url: String
     let file_name: String
@@ -58,7 +57,6 @@ struct BigImage: Codable {
     let file_type: String
 }
 
-//lvl 5
 struct ListImage: Codable {
     let file_url: String
     let file_name: String

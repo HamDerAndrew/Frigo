@@ -41,26 +41,20 @@ struct ProductManager {
                         
                         for product in itemsArray {
                             let theObj = ProductCell(Title: product.title, Price: product.price, listImage: product.list_image.file_url, bigImage: product.big_image.file_url)
-                            print("Append \(theArray.count)")
                             theArray.append(theObj)
-                            print("Did Append")
                         }
                     } catch {
                         print(error)
                     }
                     print("AFTER LOOP \(theArray)")
                 }
-                
-                print("OUTSIDE DATA \(theArray)")
             }
             //4. Start the task
             task.resume()
-            print("AFTER RESUME\(theArray)")
         }
-        //IT GOES WRONG HERE
-        print("JUST BEFORE RETURN \(theArray)")
         
         return theArray
     }
+    
     
 }

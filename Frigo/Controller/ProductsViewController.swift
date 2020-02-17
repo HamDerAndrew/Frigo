@@ -12,7 +12,6 @@ class ProductsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let productManager = ProductManager()
     let productsUrl = "https://staging.appcms.dk/api/cX8hvUC6GEKGgUuvzsBCNA/content/da"
     let cellSpacingHeight: CGFloat = 10
     
